@@ -3,14 +3,141 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
 -->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-        jhbdfdnkrr
-    </body>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Hall</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+
+        .logo img {
+            width: 50px;
+        }
+
+        .search-bar input {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        .location {
+            font-size: 18px;
+        }
+
+        /* Promo Banner */
+        .promo-banner {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            background-color: #111;
+        }
+
+        .promo-text {
+            text-align: left;
+        }
+
+        .promo-text h1 {
+            font-size: 32px;
+            color: #FFD700;
+        }
+
+        .promo-text h2 {
+            font-size: 24px;
+            color: #FFF;
+        }
+
+        .promo-text p {
+            font-size: 18px;
+        }
+
+        .ticket-info h3 {
+            font-size: 36px;
+            color: #FFD700;
+        }
+
+        /* Movies Section */
+        .movies {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .movie img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="Pornhub-Logo.png" alt="PVR Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search movies...">
+            <button>Search</button>
+        </div>
+        <div class="location">
+            <p>Colombo</p>
+        </div>
+    </header>
+
+    <!-- Promo Banner -->
+    <section class="promo-banner">
+        <div class="promo-text">
+            <h1>PVR • INOX</h1>
+            <h2>Poppin' For 5 Years</h2>
+            <p>And the Show Goes On</p>
+            <p>Enjoy Handpicked Classics on the Big Screen</p>
+            <p>1st - 9th November, 2024</p>
+        </div>
+        <div class="ticket-info">
+            <p>Ticket Starting At</p>
+            <h3>500</h3>
+        </div>
+    </section>
+
+    <!-- Movies Section -->
+    <section class="movies">
+        <div class="movie-grid">
+            <div class="movie"><img src="MV5BMDBkZDNjMWEtOTdmMi00NmExLTg5MmMtNTFlYTJlNWY5YTdmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Top Gun"></div>
+            <div class="movie"><img src="mission-impossible.jpg" alt="Mission Impossible"></div>
+            <div class="movie"><img src="jurassic-world.jpg" alt="Jurassic World"></div>
+            <div class="movie"><img src="fast.jpg" alt="Fast"></div>
+            <div class="movie"><img src="oppenheimer.jpg" alt="Oppenheimer"></div>
+            <div class="movie"><img src="telugu-movie.jpg" alt="Telugu Movie"></div>
+            <div class="movie"><img src="mario.jpg" alt="Mario"></div>
+        </div>
+    </section>
+</body>
 </html>
